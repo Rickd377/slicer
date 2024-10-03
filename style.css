@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --background-color: #fff;
+    --form-background-color: #fff;
+    --border-color: #ccc;
+    --button-background-color: #007BFF;
+    --button-hover-background-color: #0056b3;
+    --button-text-color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+form {
+    background: var(--form-background-color);
+    padding: 20px 60px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.select-container, .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textareas-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    height: 80vh;
+    font-family: 'poppins', sans-serif;
+}
+
+textarea:first-child, textarea:nth-child(2), textarea:last-child {
+    flex: 1;
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+button:active {
+    animation: clickAnimation 0.3s;
+}
+
+@keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.button-container {
+    margin-top: 20px;
+}

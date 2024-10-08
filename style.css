@@ -73,7 +73,7 @@ textarea {
     position: absolute;
     left: -40px; /* Adjust this value as needed */
     top: 0;
-    padding: 10px;
+    padding: 12px;
     border-right: 1px solid var(--border-color);
     background: #f4f4f4;
     color: #888;

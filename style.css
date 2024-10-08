@@ -48,10 +48,17 @@ select {
 .textareas-container {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 50px;
+}
+
+.textarea-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
 }
 
 textarea {
+    font-size: 0.8rem;
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -59,11 +66,22 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
     height: 80vh;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-textarea:first-child, textarea:nth-child(2), textarea:last-child {
-    flex: 1;
+.line-numbers {
+    position: absolute;
+    left: -40px; /* Adjust this value as needed */
+    top: 0;
+    padding: 10px;
+    border-right: 1px solid var(--border-color);
+    background: #f4f4f4;
+    color: #888;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    font-size: 0.8rem;
+    pointer-events: none;
 }
 
 button {
@@ -92,4 +110,9 @@ button:active {
 
 .button-container {
     margin-top: 20px;
+}
+
+#textArea2:hover,
+#textArea3:hover {
+    cursor: not-allowed;
 }

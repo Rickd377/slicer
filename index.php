@@ -76,11 +76,8 @@
     <script>
         function copyToClipboard(id) {
             const textArea = document.getElementById(id);
-            const text = textArea.value; // Keep line breaks
-            navigator.clipboard.writeText(text).then(() => {
-                alert('Copied to clipboard');
-                textArea.value = ''; // Clear the text area
-            });
+            const text = textArea.value;
+            navigator.clipboard.writeText(text);
         }
     </script>
 </body>
